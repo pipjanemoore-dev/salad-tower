@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#24452f">
+  <title>Salad Tower</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon-192.png">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Salad Tower">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="today-bar" class="today-bar" role="status"></div>
+  <main id="app"></main>
+  <nav class="tabs" aria-label="Main">
+    <a href="#/today" data-tab="today">Today</a>
+    <a href="#/batches" data-tab="batches">Batches</a>
+    <a href="#/tower" data-tab="tower">Tower</a>
+    <a href="#/water" data-tab="water">Water</a>
+    <a href="#/plan" data-tab="plan">Plan</a>
+    <a href="#/guide" data-tab="guide">Guide</a>
+  </nav>
+  <script src="sync-config.js"></script>
+  <script src="sync-core.js"></script>
+  <script src="crops.js"></script>
+  <script src="seeds.js"></script>
+  <script src="logic.js"></script>
+  <script src="guide.js"></script>
+  <script src="app.js"></script>
+  <script type="module" src="sync.js"></script>
+</body>
+</html>
